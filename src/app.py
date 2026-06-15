@@ -1,9 +1,4 @@
-"""
-High School Management System API
 
-A super simple FastAPI application that allows students to view and sign up
-for extracurricular activities at Mergington High School.
-"""
 
 from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
@@ -51,11 +46,35 @@ activities = {
         "max_participants": 16,
         "participants": ["Noah@mergington.edu", "Ava@mergington.edu"]
     },
+    "Volleyball Team": {
+        "description": "Practice volleyball drills and compete in friendly matches",
+        "schedule": "Mondays and Wednesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 18,
+        "participants": ["sophia@mergington.edu", "jack@mergington.edu"]
+    },
+    "Tennis Club": {
+        "description": "Develop tennis techniques and prepare for local tournaments",
+        "schedule": "Tuesdays and Thursdays, 3:30 PM - 5:00 PM",
+        "max_participants": 14,
+        "participants": ["olivia@mergington.edu", "noah@mergington.edu"]
+    },
     "Art Club": {
         "description": "Explore drawing, painting, and creative design projects",
         "schedule": "Mondays, 4:00 PM - 5:30 PM",
         "max_participants": 15,
         "participants": ["Isabella@mergington.edu", "Ethan@mergington.edu"]
+    },
+    "Photography Club": {
+        "description": "Learn photography techniques and capture creative images",
+        "schedule": "Wednesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 12,
+        "participants": ["mia@mergington.edu", "lucas@mergington.edu"]
+    },
+    "Music Ensemble": {
+        "description": "Practice instruments and perform musical pieces together",
+        "schedule": "Fridays, 4:00 PM - 5:30 PM",
+        "max_participants": 20,
+        "participants": ["ava@mergington.edu", "ethan@mergington.edu"]
     },
     "Drama Club": {
         "description": "Rehearse scenes, develop acting skills, and prepare performances",
@@ -74,6 +93,18 @@ activities = {
         "schedule": "Tuesdays, 4:00 PM - 5:30 PM",
         "max_participants": 12,
         "participants": ["Emma@mergington.edu", "Sophia@mergington.edu"]
+    },
+    "Robotics Club": {
+        "description": "Build robots, learn engineering concepts, and tackle STEM challenges",
+        "schedule": "Mondays and Thursdays, 4:00 PM - 5:30 PM",
+        "max_participants": 16,
+        "participants": ["michael@mergington.edu", "isabella@mergington.edu"]
+    },
+    "Science Club": {
+        "description": "Explore experiments, scientific ideas, and hands-on research",
+        "schedule": "Tuesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 18,
+        "participants": ["daniel@mergington.edu", "sophia@mergington.edu"]
     }
 }
 
